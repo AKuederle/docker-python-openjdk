@@ -15,3 +15,7 @@ RUN pip install pip --upgrade
 RUN apt-get update --fix-missing && apt-get install -y gcc
 RUN python -m pip install --upgrade Cython
 RUN conda install virtualenv -y
+
+# Install build-essentials for make
+RUN apt-get install build-essential -y
+
